@@ -11,7 +11,7 @@ COPY . /var/www/html/
 WORKDIR /var/www/html/
 
 # ✅ Allow logs
-RUN touch /var/www/html/webhook_log.txt && chmod 666 /var/www/html/webhook_log.txt
+RUN touch /var/www/html/webhook_log.txt && chmod 777 /var/www/html/webhook_log.txt
 
 # ✅ Expose port 80 (Render requirement)
 EXPOSE 80
